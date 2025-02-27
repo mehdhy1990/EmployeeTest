@@ -32,5 +32,19 @@ public class EmployeeTests
         
         //assert
         Assert.StartsWith(employee.FirstName, employee.FullName,StringComparison.InvariantCulture);
+    }  
+    [Fact]
+    public void EmployeeFullNamePropertyGetter_InputFirstAndLastName_FullNameContainName()
+    {
+        //arrange
+        var employee = new InternalEmployee("John", "Doe",0,2500,false,1);
+        
+        
+        //act
+        employee.FirstName = "mehdi";
+        employee.LastName = "heidari";
+        
+        //assert
+        Assert.Contains("i hei", employee.FullName,StringComparison.InvariantCulture);
     }
 }
