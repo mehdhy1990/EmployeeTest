@@ -32,5 +32,19 @@ namespace EmployeeManagement.Test
 
             Assert.True(employee.Salary is >= 2500 and < 3000,"salary must be between 2500 and 3000");
         }
+        [Fact]
+        public void CreateEmployee_ConstructInternalEmployee_SalaryMustBe2500_PrecisionTest()
+        {
+            var employeeFactory = new EmployeeFactory();
+
+            var employee = (InternalEmployee)employeeFactory
+                .CreateEmployee("Kevin", "Dockx");
+           employee.Salary = 2500.125m;
+
+            Assert.Equal(2500, employee.Salary,0);
+        }
     }
+    
+    
+
 }
