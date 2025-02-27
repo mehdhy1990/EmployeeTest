@@ -1,6 +1,22 @@
-﻿namespace EmployeeManagement.Test;
+﻿using EmployeeManagement.DataAccess.Entities;
+using Xunit;
+
+namespace EmployeeManagement.Test;
 
 public class EmployeeTests
 {
-    
+    [Fact]
+    public void EmployeeFullNamePropertyGetter_InputFirstAndLastName_FullNameIsConcatonated()
+    {
+        //arrange
+        var employee = new InternalEmployee("John", "Doe",0,2500,false,1);
+        
+        
+        //act
+        employee.FirstName = "mehdi";
+        employee.LastName = "Heidari";
+        
+        //assert
+        Assert.Equal("Mehdi Heidari",employee.FullName,ignoreCase:true);
+    }
 }

@@ -134,3 +134,4 @@ C:\Users\mehdi\Desktop\Modern C# projects\Unit Testing\EmployeeTesting\EmployeeM
 C:\Users\mehdi\Desktop\Modern C# projects\Unit Testing\EmployeeTesting\EmployeeManagement.Test\obj\Debug\net6.0\EmployeeManagement.Test.pdb
 C:\Users\mehdi\Desktop\Modern C# projects\Unit Testing\EmployeeTesting\EmployeeManagement.Test\obj\Debug\net6.0\EmployeeManagement.Test.genruntimeconfig.cache
 C:\Users\mehdi\Desktop\Modern C# projects\Unit Testing\EmployeeTesting\EmployeeManagement.Test\obj\Debug\net6.0\ref\EmployeeManagement.Test.dll
+C:\Users\mehdi\Desktop\Modern C# projects\Unit Testing\EmployeeTesting\EmployeeManagement.Test\obj\Debug\net6.0\EmployeeManagement.Test.sourcelink.json
